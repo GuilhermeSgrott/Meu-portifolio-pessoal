@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfólio | Guilherme Sgrott Gonzaga</title>
   <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" type="" href="Lupinha.png">
+
 
 </head>
 <body>
   <header>
-    <h1>Guilherme Sgrott Gonzaga</h1>
-    <p>Estudante de Gestão da TI | Desenvolvedor Frontend</p>
-  </header>
+  <h1>Guilherme Sgrott Gonzaga</h1>
+  <p>Estudante de Gestão da TI | Desenvolvedor Frontend</p>
+  <button id="toggle-theme">🌓 Alternar Tema</button>
+</header>
+
 
   <section>
     <h2>Sobre Mim</h2>
@@ -25,7 +29,7 @@
     <div class="project">
       <h3>Portfólio Pessoal</h3>
       <p>Desenvolvido com HTML, CSS e JavaScript, 100% responsivo e com design moderno.</p>
-      <a href="#">🔗 Ver projeto</a>
+      <a href="https://github.com/GuilhermeSgrott/Meu-portifolio-pessoal">🔗 Ver projeto</a>
     </div>
       <div class="project">
       <h3>Projeto Cadastro de Clientes</h3>
@@ -43,6 +47,15 @@
       <p>📞Telefone: <a href="">(48)99692-2865</a></p>
     </div>
   </section>
+  <script>
+  const btn = document.getElementById('toggle-theme');
+  const body = document.body;
+
+  btn.addEventListener('click', () => {
+    body.classList.toggle('dark-theme');
+  });
+</script>
+
 
   <footer>
     <p>&copy; 2025 - Guilherme Sgrott Gonzaga. Todos os direitos reservados.</p>
